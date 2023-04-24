@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./scss/reset.scss"> -->
+    <link rel="stylesheet" href="./scss/main.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header>
+            <!-- 로고, 검색창 -->
+            <div class="title">
+                <h1 id="logo"><a href="#"><img src="./img/idus-new-logo.png" alt=""></a></h1>
+                <h2>작품</h2>
+                <h2>클래스</h2>
+                <input type="text" placeholder="어버이날 선물을 검색해보세요">
+                <div class="user"><a href="#"><i class="fa-regular fa-user"></i><span>내정보</span></a></div>
+                <div class="cart"><a href="#"><i class="fa-solid fa-cart-shopping"></i><span>장바구니</span></a></div>
+            </div>
+
+            <!-- 카테고리 -->
+            <div class="category">
+                <nav>
+                    <h2 class="hide">메인네비게이션</h2>
+                    <ul>
+                        <li><a href="#">카테고리</a></li>
+                        <li><a href="#">홈</a></li>
+                        <li><a href="#">실시간 구매</a></li>
+                        <li><a href="#">실시간 후기</a></li>
+                        <li><a href="#">작가님 추천</a></li>
+                        <li><a href="#">실시간 추천</a></li>
+                        <li><a href="#">인기 작품</a></li>
+                        <li><a href="#">작가 피드</a></li>
+                        <li><a href="#">매거진</a></li>
+                        <li><a href="#">최신작품</a></li>
+                        <li><a href="#">인기작가</a></li>
+                        <li><a href="#">소담상회</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- article -->
+        <article>
+            <h3 class="hide">content</h3>
+            <!-- swiper -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide no1"></div>
+                    <div class="swiper-slide no2"></div>
+                    <div class="swiper-slide no3"></div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+            <!-- section1(실시간구매) -->
+            <section id="section1">
+                <div class="slide">
+                    <h3 class="now">실시간 구매</h3>
+                    <p><span>1/5</span>
+                        <span><i class="fa-solid fa-angle-left"></i></span>
+                        <span><i class="fa-solid fa-angle-right"></i></span>
+                    </p>
+                </div>
+                <ul>
+                    <li class="slide1">
+                        <ul>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/bag-ge6b9f3383_640.jpg" alt="bag">
+                                            <dt>퀼팅 체인 숄더 크로스백 lm-7014c</dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>포장꼼꼼히 잘 왔어요!</dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/cakes-g7531fdc62_640.jpg" alt="cake1">
+                                            <dt>💜토퍼무료제공💜한끼 식사 대용 강아지 고양이 케이크</dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>가격대비 굉장히 고퀄리티에 디</dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/donut-gb592327f7_640.png" alt="donut">
+                                            <dt>튀기지 않아 담백한 구운도넛!</dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                맛있어요!~!!
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/cookies-gfdec602f9_640.jpg" alt="cookie">
+                                            <dt>돌아온 뇽뇽네 촉촉한 초코칩 쿠키</dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                <div data-v-5efaac0f="" data-v-796f1feb=""
+                                                    class="review-comment__contents">
+                                                    사진처럼 부셔진 상태로 왔지만 맛있어요~!
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/cassette-g9e0d53d89_640.png" alt="카세트">
+                                            <dt>
+                                                음성을 전하는 빈티지 카세트 앨범📻생일, 감사 편지
+                                            </dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                친절하십니다
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/stainless-g8336c227d_640.jpg" alt="스테인리스">
+                                            <dt>
+                                                tiny antique ring
+                                            </dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>너무너무 예뻐요</dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/tart-gee517d9e1_640.jpg" alt="타르트">
+                                            <dt>
+                                                올 어바웃 켈리스핑거 타르트
+                                            </dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                하.. 너무마싯어..
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/christmas-gfd61aaa74_640.jpg" alt="">
+                                            <dt>
+                                                연말선물🎄Christmas 트리볼🎄구아바맛
+                                            </dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                배송은 매우 빨랐다.
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/currants-g057522689_640.jpg" alt="">
+                                            <dt>
+                                                [더 플루티] 포도향 종결템, Like a Podo
+                                            </dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>향이 좋아요!!</dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/donut-gb592327f7_640.png" alt="도넛">
+                                            <dt>
+                                                🍩 쁘띠 도넛마들렌 SET 🍩
+                                            </dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                작지만 귀엽고 맛있네요
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="slide2">
+                        <ul>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/bag-ge6b9f3383_640.jpg" alt="bag">
+                                            <dt>퀼팅 체인 숄더 크로스백 lm-7014c</dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>포장꼼꼼히 잘 왔어요!</dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/cakes-g7531fdc62_640.jpg" alt="cake1">
+                                            <dt>💜토퍼무료제공💜한끼 식사 대용 강아지 고양이 케이크</dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>가격대비 굉장히 고퀄리티에 디</dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/donut-gb592327f7_640.png" alt="donut">
+                                            <dt>튀기지 않아 담백한 구운도넛!</dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                맛있어요!~!!
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/cookies-gfdec602f9_640.jpg" alt="cookie">
+                                            <dt>돌아온 뇽뇽네 촉촉한 초코칩 쿠키</dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                <div data-v-5efaac0f="" data-v-796f1feb=""
+                                                    class="review-comment__contents">
+                                                    사진처럼 부셔진 상태로 왔지만 맛있어요~!
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/cassette-g9e0d53d89_640.png" alt="카세트">
+                                            <dt>
+                                                음성을 전하는 빈티지 카세트 앨범📻생일, 감사 편지
+                                            </dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                친절하십니다
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/stainless-g8336c227d_640.jpg" alt="스테인리스">
+                                            <dt>
+                                                tiny antique ring
+                                            </dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>너무너무 예뻐요</dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/tart-gee517d9e1_640.jpg" alt="타르트">
+                                            <dt>
+                                                올 어바웃 켈리스핑거 타르트
+                                            </dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                하.. 너무마싯어..
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/christmas-gfd61aaa74_640.jpg" alt="">
+                                            <dt>
+                                                연말선물🎄Christmas 트리볼🎄구아바맛
+                                            </dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                배송은 매우 빨랐다.
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/currants-g057522689_640.jpg" alt="">
+                                            <dt>
+                                                [더 플루티] 포도향 종결템, Like a Podo
+                                            </dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>향이 좋아요!!</dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/donut-gb592327f7_640.png" alt="도넛">
+                                            <dt>
+                                                🍩 쁘띠 도넛마들렌 SET 🍩
+                                            </dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                작지만 귀엽고 맛있네요
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="slide3">
+                        <ul>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/bag-ge6b9f3383_640.jpg" alt="bag">
+                                            <dt>퀼팅 체인 숄더 크로스백 lm-7014c</dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>포장꼼꼼히 잘 왔어요!</dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/cakes-g7531fdc62_640.jpg" alt="cake1">
+                                            <dt>💜토퍼무료제공💜한끼 식사 대용 강아지 고양이 케이크</dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>가격대비 굉장히 고퀄리티에 디</dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/donut-gb592327f7_640.png" alt="donut">
+                                            <dt>튀기지 않아 담백한 구운도넛!</dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                맛있어요!~!!
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/cookies-gfdec602f9_640.jpg" alt="cookie">
+                                            <dt>돌아온 뇽뇽네 촉촉한 초코칩 쿠키</dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                <div data-v-5efaac0f="" data-v-796f1feb=""
+                                                    class="review-comment__contents">
+                                                    사진처럼 부셔진 상태로 왔지만 맛있어요~!
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/cassette-g9e0d53d89_640.png" alt="카세트">
+                                            <dt>
+                                                음성을 전하는 빈티지 카세트 앨범📻생일, 감사 편지
+                                            </dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                친절하십니다
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/stainless-g8336c227d_640.jpg" alt="스테인리스">
+                                            <dt>
+                                                tiny antique ring
+                                            </dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>너무너무 예뻐요</dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/tart-gee517d9e1_640.jpg" alt="타르트">
+                                            <dt>
+                                                올 어바웃 켈리스핑거 타르트
+                                            </dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                하.. 너무마싯어..
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/christmas-gfd61aaa74_640.jpg" alt="">
+                                            <dt>
+                                                연말선물🎄Christmas 트리볼🎄구아바맛
+                                            </dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                배송은 매우 빨랐다.
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/currants-g057522689_640.jpg" alt="">
+                                            <dt>
+                                                [더 플루티] 포도향 종결템, Like a Podo
+                                            </dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>향이 좋아요!!</dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/donut-gb592327f7_640.png" alt="도넛">
+                                            <dt>
+                                                🍩 쁘띠 도넛마들렌 SET 🍩
+                                            </dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                작지만 귀엽고 맛있네요
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="slide4">
+                        <ul>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/bag-ge6b9f3383_640.jpg" alt="bag">
+                                            <dt>퀼팅 체인 숄더 크로스백 lm-7014c</dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>포장꼼꼼히 잘 왔어요!</dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/cakes-g7531fdc62_640.jpg" alt="cake1">
+                                            <dt>💜토퍼무료제공💜한끼 식사 대용 강아지 고양이 케이크</dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>가격대비 굉장히 고퀄리티에 디</dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/donut-gb592327f7_640.png" alt="donut">
+                                            <dt>튀기지 않아 담백한 구운도넛!</dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                맛있어요!~!!
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/cookies-gfdec602f9_640.jpg" alt="cookie">
+                                            <dt>돌아온 뇽뇽네 촉촉한 초코칩 쿠키</dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                <div data-v-5efaac0f="" data-v-796f1feb=""
+                                                    class="review-comment__contents">
+                                                    사진처럼 부셔진 상태로 왔지만 맛있어요~!
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/cassette-g9e0d53d89_640.png" alt="카세트">
+                                            <dt>
+                                                음성을 전하는 빈티지 카세트 앨범📻생일, 감사 편지
+                                            </dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                친절하십니다
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/stainless-g8336c227d_640.jpg" alt="스테인리스">
+                                            <dt>
+                                                tiny antique ring
+                                            </dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>너무너무 예뻐요</dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/tart-gee517d9e1_640.jpg" alt="타르트">
+                                            <dt>
+                                                올 어바웃 켈리스핑거 타르트
+                                            </dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                하.. 너무마싯어..
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/christmas-gfd61aaa74_640.jpg" alt="">
+                                            <dt>
+                                                연말선물🎄Christmas 트리볼🎄구아바맛
+                                            </dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                배송은 매우 빨랐다.
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/currants-g057522689_640.jpg" alt="">
+                                            <dt>
+                                                [더 플루티] 포도향 종결템, Like a Podo
+                                            </dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>향이 좋아요!!</dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/donut-gb592327f7_640.png" alt="도넛">
+                                            <dt>
+                                                🍩 쁘띠 도넛마들렌 SET 🍩
+                                            </dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                작지만 귀엽고 맛있네요
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="slide5">
+                        <ul>
+
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/cakes-g7531fdc62_640.jpg" alt="cake1">
+                                            <dt>💜토퍼무료제공💜한끼 식사 대용 강아지 고양이 케이크</dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>가격대비 굉장히 고퀄리티에 디</dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/donut-gb592327f7_640.png" alt="donut">
+                                            <dt>튀기지 않아 담백한 구운도넛!</dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                맛있어요!~!!
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/bag-ge6b9f3383_640.jpg" alt="bag">
+                                            <dt>퀼팅 체인 숄더 크로스백 lm-7014c</dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>포장꼼꼼히 잘 왔어요!</dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/cookies-gfdec602f9_640.jpg" alt="cookie">
+                                            <dt>돌아온 뇽뇽네 촉촉한 초코칩 쿠키</dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                <div data-v-5efaac0f="" data-v-796f1feb=""
+                                                    class="review-comment__contents">
+                                                    사진처럼 부셔진 상태로 왔지만 맛있어요~!
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/donut-gb592327f7_640.png" alt="도넛">
+                                            <dt>
+                                                🍩 쁘띠 도넛마들렌 SET 🍩
+                                            </dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                작지만 귀엽고 맛있네요
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/stainless-g8336c227d_640.jpg" alt="스테인리스">
+                                            <dt>
+                                                tiny antique ring
+                                            </dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>너무너무 예뻐요</dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/tart-gee517d9e1_640.jpg" alt="타르트">
+                                            <dt>
+                                                올 어바웃 켈리스핑거 타르트
+                                            </dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                하.. 너무마싯어..
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/cassette-g9e0d53d89_640.png" alt="카세트">
+                                            <dt>
+                                                음성을 전하는 빈티지 카세트 앨범📻생일, 감사 편지
+                                            </dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                친절하십니다
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/christmas-gfd61aaa74_640.jpg" alt="">
+                                            <dt>
+                                                연말선물🎄Christmas 트리볼🎄구아바맛
+                                            </dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                배송은 매우 빨랐다.
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>
+                                        <dl>
+                                            <img src="./img/currants-g057522689_640.jpg" alt="">
+                                            <dt>
+                                                [더 플루티] 포도향 종결템, Like a Podo
+                                            </dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>향이 좋아요!!</dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+                <button>실시간 구매 더보기</button>
+            </section>
+
+            <!-- section2(인기작가) -->
+            <section id="section2">
+                <div class="slide_two">
+                    <h3 class="now">인기작가</h3>
+                    <p><span>1/5</span>
+                        <span><i class="fa-solid fa-angle-left"></i></span>
+                        <span><i class="fa-solid fa-angle-right"></i></span>
+                    </p>
+                </div>
+                <ul>
+                    <li>
+                        <ul>
+                            <li>
+                                <figure>
+                                    <img src="./img/cake-gb1e63409d_640.jpg" alt="케이크">
+                                    <figcaption>
+                                        <dl>
+                                            <dt>팡팡이네</dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                안녕하세요. 팡팡이네입니다^^
+                                                고객님들에게 즐거움을 드리기 위해 오늘도 고민하고있습니다!
+                                                잘부탁드립니다. : )
+                                            </dd>
+                                            <button>+ 팔로우</button>
+                                            <button>작품 더보기</button>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="./img/cookies-gfdec602f9_640.jpg" alt="쿠키">
+                                    <figcaption>
+                                        <dl>
+                                            <dt>김보람 초콜릿</dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                👑 아이디어스 어워드 2020 수제 디저트 부문 '최우수 작가' 선정
+                                                🥇 아이디어스 '아망드 쇼콜라' 김보람 초콜릿 판매율 1위!!
+                                            </dd>
+                                            <button>+ 팔로우</button>
+                                            <button>작품 더보기</button>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="./img/tart-gee517d9e1_640.jpg" alt="타르트">
+                                    <figcaption>
+                                        <dl>
+                                            <dt>흥작가</dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                🎖 2022년 용돈이벤트 부문 우수상 수상🎉
+                                                ✅ 흥작가를 팔로우하면 즉시 사용가능한 쿠폰 발행
+                                                ✅ 매달 할인 혜택도 받고 신상품 소식도 가장 빠르게🚀 </dd>
+                                            <button>+ 팔로우</button>
+                                            <button>작품 더보기</button>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            
+                            <li>
+                                <figure>
+                                    <img src="./img/cookies-gfdec602f9_640.jpg" alt="쿠키">
+                                    <figcaption>
+                                        <dl>
+                                            <dt>김보람 초콜릿</dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                👑 아이디어스 어워드 2020 수제 디저트 부문 '최우수 작가' 선정
+                                                🥇 아이디어스 '아망드 쇼콜라' 김보람 초콜릿 판매율 1위!!
+                                            </dd>
+                                            <button>+ 팔로우</button>
+                                            <button>작품 더보기</button>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+
+                            <li>
+                                <figure>
+                                    <img src="./img/cake-gb1e63409d_640.jpg" alt="케이크">
+                                    <figcaption>
+                                        <dl>
+                                            <dt>팡팡이네</dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i class="fa-solid fa-star"
+                                                    style="color: yellow;"></i><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i class="fa-solid fa-star"
+                                                    style="color: yellow;"></i></span>
+                                            <dd>
+                                                안녕하세요. 팡팡이네입니다^^
+                                                고객님들에게 즐거움을 드리기 위해 오늘도 고민하고있습니다!
+                                                잘부탁드립니다. : )
+                                            </dd>
+                                            <button>+ 팔로우</button>
+                                            <button>작품 더보기</button>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="./img/tart-gee517d9e1_640.jpg" alt="타르트">
+                                    <figcaption>
+                                        <dl>
+                                            <dt>흥작가</dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                🎖 2022년 용돈이벤트 부문 우수상 수상🎉
+                                                ✅ 흥작가를 팔로우하면 즉시 사용가능한 쿠폰 발행
+                                                ✅ 매달 할인 혜택도 받고 신상품 소식도 가장 빠르게🚀 </dd>
+                                            <button>+ 팔로우</button>
+                                            <button>작품 더보기</button>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li>
+                                <figure>
+                                    <img src="./img/cake-gb1e63409d_640.jpg" alt="케이크">
+                                    <figcaption>
+                                        <dl>
+                                            <dt>팡팡이네</dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                안녕하세요. 팡팡이네입니다^^
+                                                고객님들에게 즐거움을 드리기 위해 오늘도 고민하고있습니다!
+                                                잘부탁드립니다. : )
+                                            </dd>
+                                            <button>+ 팔로우</button>
+                                            <button>작품 더보기</button>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="./img/cookies-gfdec602f9_640.jpg" alt="쿠키">
+                                    <figcaption>
+                                        <dl>
+                                            <dt>김보람 초콜릿</dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                👑 아이디어스 어워드 2020 수제 디저트 부문 '최우수 작가' 선정
+                                                🥇 아이디어스 '아망드 쇼콜라' 김보람 초콜릿 판매율 1위!!
+                                            </dd>
+                                            <button>+ 팔로우</button>
+                                            <button>작품 더보기</button>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="./img/tart-gee517d9e1_640.jpg" alt="타르트">
+                                    <figcaption>
+                                        <dl>
+                                            <dt>흥작가</dt>
+                                            <span><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i><i
+                                                    class="fa-solid fa-star" style="color: yellow;"></i></span>
+                                            <dd>
+                                                🎖 2022년 용돈이벤트 부문 우수상 수상🎉
+                                                ✅ 흥작가를 팔로우하면 즉시 사용가능한 쿠폰 발행
+                                                ✅ 매달 할인 혜택도 받고 신상품 소식도 가장 빠르게🚀 </dd>
+                                            <button>+ 팔로우</button>
+                                            <button>작품 더보기</button>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <button>인기작가 더보기</button>
+            </section>
+            <section id="section3">
+                <h3 class="feed">작가피드</h3>
+                <ul>
+                    <li>
+                        <figure>
+                            <figcaption>
+                                <dl>
+                                    <div id="feed">
+                                        <p><img src="./img/2843793.jpg" alt="1번프로필"></p>
+                                        <dl>
+                                            <dt>특별한나날</dt>
+                                            <dd>2023년 04월 20일</dd>
+                                        </dl>
+                                    </div>
+                                    <dd>제 비녀들이
+                                        사입비녀라고 제보가 들어왔어요😂
+                                        아이디어스 신뢰팀에 제작과정과 재료들을 보여주어
+                                        확인 받았답니다 😉
+                                    </dd>
+                                    <img src="./img/supermarket-g47400d044_1920.jpg" alt="슈퍼마켓">
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <figcaption>
+                                <dl>
+                                    <div id="feed">
+                                        <p><img src="./img/4981169.jpg" alt="2번프로필"></p>
+                                        <dl>
+                                            <dt>포켓포켓</dt>
+                                            <dd>2023년 04월 20일</dd>
+                                        </dl>
+                                    </div>
+                                    <dd>쿠션 코스터 열작업🔥🔥
+                                    </dd>
+                                    <img src="./img/breze-g108d3ceb7_640.jpg" alt="2번상품">
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <figcaption>
+                                <dl>
+                                    <div id="feed">
+                                        <p><img src="./img/8567680.jpg" alt="3번프로필"></p>
+                                        <dl>
+                                            <dt>포레스트슬립</dt>
+                                            <dd>2023년 04월 20일</dd>
+                                        </dl>
+                                    </div>
+                                    <dd>
+                                        <p class="desc">열심히 제작중입니다❤️
+                                        </p>
+                                    </dd>
+                                    <img src="./img/stainless-g8336c227d_640.jpg" alt="3번상품">
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <figcaption>
+                                <dl>
+                                    <div id="feed">
+                                        <p><img src="./img/christmas-gfd61aaa74_640.jpg" alt="4번프로필"></p>
+                                        <dl>
+                                            <dt>미닝라이트(Meaning Light)</dt>
+                                            <dd>2023년 04월 20일</dd>
+                                        </dl>
+                                    </div>
+                                    <dd>안녕하세요 미닝라이트 입니다 :)
+                                        신규 입점으로 귀여운 캔들 들고 왔답니다 :)
+                                        미니큐브와 곰돌이&토끼 선택가능하며,
+                                        [무료선물포장]으로 향기로운 선물추천 드려요 :)
+                                        앞으로 이벤트와 다양한 상품으로 만나요 ^^
+                                    </dd>
+                                    <img src="./img/gift-g9c897a0fd_640.jpg" alt="슈퍼마켓">
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <figcaption>
+                                <dl>
+                                    <div id="feed">
+                                        <p><img src="./img/cassette-g9e0d53d89_640.png" alt="5번프로필"></p>
+                                        <dl>
+                                            <dt>찻집녹원</dt>
+                                            <dd>2023년 04월 20일</dd>
+                                        </dl>
+                                    </div>
+                                    <dd>안녕하세요 찻집 녹원입니다.🌿
+
+                                        벌써 24절기 중 여섯번째 절기인 곡우를 지나고 있는 오늘입니다. 2023년을 기대하는 마음으로 맞이한 것이 엊그제 같은데 벌써 푸르른 오월을
+                                        향해 달려가고 있습니다.
+                                    </dd>
+                                    <img src="./img/supermarket-g47400d044_1920.jpg" alt="슈퍼마켓">
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <figcaption>
+                                <dl>
+                                    <div id="feed">
+                                        <p><img src="./img/bag-ge6b9f3383_640.jpg" alt="6번프로필"></p>
+                                        <dl>
+                                            <dt>가죽하는유목민 노마딬</dt>
+                                            <dd>2023년 04월 20일</dd>
+                                        </dl>
+                                    </div>
+                                    <dd>[ 노마딬 2023 특집 세일 - 오월이 온다 ]
+
+                                        선물 고민 가득한 공포의 오월!!ㅋ
+                                        오지게 무섭다는 오월이 오고있습니다.
+                                    </dd>
+                                    <img src="./img/bag-ge6b9f3383_640.jpg" alt="슈퍼마켓">
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+                <button>작가 피드 더보기</button>
+            </section>
+
+            <!-- section4 -->
+            <section id="section4">
+                <h3 class="hide">배너</h3>
+                <div class="banner">
+                    <div class="f_banner">
+                        <img src="./img/fifty-percent-off-gd7e26679d_640.png" alt="50%">
+                        <dl>
+                            <dt>EXTRA 50% OFF</dt>
+                            <dd>ON ORDERS ABOVE $3, 299</dd>
+                            <button>Shop now</button>
+                        </dl>
+                    </div>
+                    <div class="s_banner">
+                        <dl>
+                            <img src="./img/fifty-percent-off-gd7e26679d_640.png" alt="50%">
+                            <dt>EXTRA 50% OFF</dt>
+                            <dd>ON Fahion wear</dd>
+                        </dl>
+                    </div>
+                </div>
+            </section>
+            <section id="section5">
+                <h3 class="collection">WOMEN'S COLLECTION</h3>
+                <span></span>
+                <ul class="small_category">
+                    <li><a href="#"> Clothing</a></li>
+                    <li><a href="#">Footwear</a></li>
+                    <li><a href="#">Watches</a></li>
+                    <li><a href="#">Bags and Wallets</a></li>
+                </ul>
+                <ul class="product">
+                    <li>
+                        <ul>
+                    <li>
+                        <figure>
+                            <img src="./img/essential-oils-g7864a5e72_1920.jpg" alt="1번사진">
+                            <figcaption>
+                                <dl>
+                                    <dt>Lorem Ipsum</dt>
+                                    <dd>Lorem ipsum dolor sit amet</dd>
+                                    <dd>$ 25.00~$29.00</dd>
+                                    <button>Add to cart</button>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/gift-g9c897a0fd_640.jpg" alt="2번사진">
+                            <figcaption>
+                                <dl>
+                                    <dt>Lorem Ipsum</dt>
+                                    <dd>Lorem ipsum dolor sit amet</dd>
+                                    <dd>$ 25.00~$29.00</dd>
+                                    <button>Add to cart</button>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/bath-oil-ga3bd1a7cd_1920.jpg" alt="3번사진">
+                            <figcaption>
+                                <dl>
+                                    <dt>Lorem Ipsum</dt>
+                                    <dd>Lorem ipsum dolor sit amet</dd>
+                                    <dd>$ 25.00~$29.00</dd>
+                                    <button>Add to cart</button>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/currants-g057522689_640.jpg" alt="4번사진">
+                            <figcaption>
+                                <dl>
+                                    <dt>Lorem Ipsum</dt>
+                                    <dd>Lorem ipsum dolor sit amet</dd>
+                                    <dd>$ 25.00~$29.00</dd>
+                                    <button>Add to cart</button>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    </ul>
+                    </li>
+                </ul>
+            </section>
+        </article>
+
+        <!-- footer -->
+        <footer>
+            <ul>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보 처리방침</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">자주 묻는질문</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">입점문의</a></li>
+                <li><a href="#">Aboutus</a></li>
+                <li><a href="#">인재영입</a></li>
+            </ul>
+            <hr>
+            <div id="footer">
+                <ul>
+                    <li>
+                        <img src="./img/idus-new-logo.png" alt="로고">
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>(주)XXX</dt>
+                            <dd>대표이사: 홍길동</dd>
+                            <dd>서울특별시 xx구 xx로 xx길 xx</dd>
+                            <dd>사업자 등록번호:111-11-1111</dd>
+                            <dd>통신판매업신고: xx-xx-서울-xxxx</dd>
+                            <dd>호스팅서비스 제공자: xxxxxx</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>고객센터(평일오전10시~오후6시)</dt>
+                            <dd>카카오톡 아이디어스</dd>
+                            <dd>대표번호 1324-7986</dd>
+                            <dd>메일 rudwls512@naver.com</dd>
+                            <dd>제휴문의 xx@xxxx.com</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>Follow Us</dt>
+                            <img src="./img/facebook.png" alt="facebook">
+                            <img src="./img/instagram.png" alt="instagream">
+                            <img src="./img/twitter.png" alt="twiter">
+                            <img src="./img/blog.png" alt="blog">
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <p></p>
+        </footer>
+        <p>Copyright 2023 All Rights Reserved</p>
+    </div>
+
+</body>
+
+</html>
