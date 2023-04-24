@@ -1,0 +1,63 @@
+@use './common.scss' as *;
+
+/* footer */
+footer {
+    @include layout;
+    margin-bottom: $margin;
+}
+
+footer>ul {
+    @include flex(nowrap, center);
+}
+
+footer>ul>li {
+    border-right: $border;
+}
+
+footer>ul>li:last-child {
+    border: none;
+}
+
+footer>ul>li>a {
+    color: $color-b;
+    padding: 0 $font-xl;
+    font-size: $font-m;
+}
+
+#footer {}
+
+#footer>ul {
+    @include flex(nowrap, flex-start);
+    width: 100%;
+}
+
+#footer>ul>li {
+    width: 25%;
+}
+
+#footer>ul>li>dl>dt {
+    font-size: $font-m;
+    margin-bottom: $font-s;
+    font-weight: $weight;
+}
+
+#footer>ul>li>dl>dd {
+    font-size: $font-s;
+    line-height: $font-xl;
+}
+
+#footer>ul>li:last-of-type>dl>img {
+    width: $font-l * 2;
+    height: $font-l * 2;
+    border-radius: $small-px;
+    margin-right: $small-px;
+}
+
+#wrap>p {
+    width: auto;
+    background-color: $color-b;
+    color: $color-g;
+    font-size: $font-m;
+    padding: $font-s * 2;
+    text-align: center;
+}

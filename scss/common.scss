@@ -1,0 +1,41 @@
+
+$small-px: 10px;
+$medium-px: 15px;
+$large-px: 20px;
+
+$font-s: 12px;
+$font-m: 14px;
+$font-l: 16px;
+$font-xl: 18px;
+
+$color-o: #ff7d30;
+$color-b: #333346;
+$color-w: #ffffff;
+$color-g: #d9d9d9;
+
+$margin: 40px;
+$border: 1px solid;
+$radius: 5px;
+$input: 333px;
+
+$weight: bold;
+
+@mixin flex($wrap, $jusify) {
+    display: flex;
+    flex-wrap: $wrap;
+    justify-content: $jusify;
+    align-items: center;
+}
+
+@mixin layout {
+    width: 1270px;
+    margin: 0 auto;
+}
+@mixin hide{
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    position: absolute;
+}

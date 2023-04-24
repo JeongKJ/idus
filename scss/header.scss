@@ -1,0 +1,66 @@
+@use './common.scss' as *;
+
+header {
+    @include layout;
+    @include flex(wrap, start);
+    padding-top: $font-m;
+    position: relative;
+}
+
+header>.title {
+    @include flex(nowrap, flex-start);
+    border-bottom: 2px solid $color-g;
+    padding-bottom: $small-px;
+}
+
+header>.title>h1 {
+    margin-right: 32px;
+}
+
+header>.title>h2 {
+    font-size: $large-px;
+    font-weight: $weight;
+    margin-right: $font-l;
+}
+
+header>.title>input {
+    height: $large-px * 2;
+    width: $input;
+    border: $border #ff7d30;
+    border-radius: $radius;
+    margin-right: $input;
+}
+
+header>.title>div>a {
+    margin-right: $font-m * 2;
+    @include flex(wrap, center);
+    color: $color-b;
+}
+
+header>.title>div>a>i {
+    text-align: center;
+    margin-bottom: $small-px;
+    width: 100%;
+}
+
+header>.category {
+    padding: $font-m 0;
+    width: 100%;
+}
+
+header>.category>nav>ul {
+    @include flex(nowrap, center);
+}
+
+header>.category>nav>ul>li {
+    margin: 0 $font-s;
+    font-size: $font-m;
+}
+
+header>.category>nav>ul>li>a {
+    color: $color-b;
+}
+
+header>.category>nav>ul>li:nth-child(2)>a {
+    color: $color-o;
+}
