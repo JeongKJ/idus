@@ -1,32 +1,15 @@
-import Swiper from 'swiper';
-import '../css/swiper.css';
-import jQuery from 'jquery';
 import $ from 'jquery';
 
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'vertical',
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
-
-
 $(function () {
+//함수 만들기
+  gallery01();
+  gallery02();
+  gallery03();
+     
+
+})
+  
+function gallery01() {
   let slidewidth = $('#section1>ul>li').width();
   $('#section1>ul>li:last').prependTo('#section1>ul');
   $('#section1>ul').css({ marginLeft: '-' + slidewidth + 'px' });
@@ -45,11 +28,14 @@ $(function () {
       $('#section1>ul').css({ marginLeft: '-' + slidewidth + 'px' });
     });
   });
-});
-  
 
-$(function () {
-      const twowidth = $('section2>ul>li').width();
+}
+
+
+function gallery02() {
+
+  const twowidth = $('#section2>ul>li').width();
+  console.log(twowidth)
   $('#section2>ul>li:last').prependTo('#section2>ul');
   $('#section2>ul').css({ marginLeft: '-' + twowidth + 'px' });
 
@@ -67,5 +53,18 @@ $(function () {
       $('#section2>ul').css({ marginLeft: '-' + twowidth + 'px' });
     });
   });
-  })
+}
 
+function gallery03(){
+    $('.small_category>li:first-child>a').addClass('selected');
+      $('.product>li:not(:first)').hide();
+  $('.small_category>li>a').on('click', function () {
+    let select = $(this).attr('href');
+    $('.product>li').hide();
+    $(select).show();
+    $('.small_category>li>a').removeClass('selected');
+    $(this).addClass('selected');
+    return false;
+  });
+}
+  

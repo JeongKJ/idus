@@ -1,26 +1,28 @@
 /* swiper */
 .swiper {
-    overflow: hidden;
     width: 100%;
     height: 600px;
-    margin-bottom: 28px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 40px;
 }
 
-.swiper-wrapper {
-    height: 600px;
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 .swiper .no1 {
     background: url('../img/follow-us-gfff6cdb13_1920.jpg') no-repeat center bottom;
-    height: 100%;
 }
 
 .swiper .no2 {
     background: url('../img/social-media-g43eccdbca_1920.jpg') no-repeat center bottom;
-    height: 100%;
 }
 
 .swiper .no3 {
     background: url('../img/signs-g9a40078cd_1920.jpg') no-repeat center top;
-    height: 100%;
 }

@@ -1,5 +1,6 @@
 @use './common.scss' as *;
 
+
 /* section1(실시간 구매) */
 section#section1 {
     margin: 0 auto;
@@ -60,6 +61,7 @@ section#section1>.slide>p>span {
     border: $border $color-g;
     border-radius: $radius;
     margin-bottom: $font-m;
+    box-sizing: border-box;
 }
 
 #section1>ul>li>figure>figcaption {}
@@ -76,17 +78,19 @@ section#section1>.slide>p>span {
     height: $font-m * 5;
     margin-top: 27px;
     font-size: $font-xl;
+    border-bottom: $border $color-g;
 }
 
 #section1>ul>li>ul>li>figure>figcaption>dl>span {
+    margin-top: $radius;
     padding: 0 $font-m;
-    @include flex(nowrap,center);
+    @include flex(nowrap,start);
 }
 
 #section1>ul>li>ul>li>figure>figcaption>dl>dd {
     font-size: $font-m;
     padding: 0 $font-m;
-    margin-top: $font-s;
+    margin-top: $radius+3;
     height: $font-m;
 }
 
@@ -155,17 +159,17 @@ section#section2>.slide_two>p>span {
 
 #section2>ul>li>ul>li>figure {
     width: 100%;
-    height: $margin * 10;
     background-color: $color-w;
     border: $border $color-g;
     border-radius: $radius;
     margin-bottom: $font-m;
+    padding-bottom: $small-px;
+    box-sizing: border-box;
 }
 
 #section2>ul>li>ul>li>figure>img {
     width: 100%;
-    height: $radius * 35;
-    margin-bottom: $medium-px * 3;
+    margin-bottom: $medium-px;
 }
 
 #section2>ul>li>ul>li>figure>figcaption {
@@ -290,6 +294,7 @@ section#section3>ul>li>figure>figcaption {
 #section3>ul>li>figure>figcaption>dl>img {
     width: 100%;
     height: $small-px * 21;
+    border-bottom: 1px solid $color-g;
 }
 
 section#section3>h3 {
@@ -421,13 +426,14 @@ section#section3>h3 {
     padding: $small-px $small-px * 2;
     font-size: $font-m;
 }
-
-#section5>ul.small_category>li>a {
+#section5>ul.small_category>li>a:not(selected){
     color: $color-b;
 }
-
-#section5>ul.small_category>li:first-child {
+.selected{
+    padding: $small-px $small-px * 2;
+    font-size: $font-m;
     background-color: $color-o;
+    color: $color-w;
 }
 
 #section5>ul.small_category>li:nth-child(3) {
@@ -437,7 +443,7 @@ section#section3>h3 {
 /* 상품 이미지부분(product) */
 #section5>ul.product {
     @include flex(nowrap, start);
-    overflow: hidden;
+    // overflow: hidden;
     width: 400%;
 }
 #section5>ul.product>li{
@@ -455,7 +461,7 @@ section#section3>h3 {
 }
 
 #section5>ul.product>li>ul>li>figure {
-    height: $medium-px * 30;
+    height: $large-px * 25;
 }
 
 #section5>ul.product>li>ul>li>figure>img {

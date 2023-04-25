@@ -3,20 +3,22 @@
 @use './header.scss';
 @use './content.scss';
 @use './footer.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 .hide{
     @include hide;
 }
-.body,html{
-    // width: 1920px;
-    font-family: 'Inter',
-            sans-serif;
+body{
+    width: 1920px;
+    font-family: 'Inter', sans-serif;
 }
 div#wrap{
     position: relative;
     margin: 0 auto;
 }
-
+a{
+    text-decoration: none;
+  }
 // header{
 //     @include layout;
 //     @include flex(wrap,start);
