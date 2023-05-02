@@ -12,7 +12,11 @@
   "license": "ISC",
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
+    "parcel-plugin-static-files-copy": "^2.6.0",
     "sass": "^1.62.0"
+  },
+  "staticFiles":{
+    "staticPath":"static"
   },
   "dependencies": {
     "jquery": "^3.6.4",

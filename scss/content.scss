@@ -462,6 +462,7 @@ section#section3>h3 {
 
 #section5>ul.product>li>ul>li>figure {
     height: $large-px * 25;
+    position: relative;
 }
 
 #section5>ul.product>li>ul>li>figure>img {
@@ -486,8 +487,12 @@ section#section3>h3 {
     font-size: $font-l;
     margin-bottom: $font-m;
 }
-
-#section5>ul.product>li>ul>li>figure>figcaption>dl>button {
+#section5>ul.product>li>ul>li>figure>figcaption>dl>dd:nth-of-type(2){
+    font-size: $font-m;
+    color: $color-g;
+}
+#section5>ul.product>li>ul>li>figure>button {
+    
     width: $font-s * 10;
     height: $medium-px * 2;
     margin-top: $font-m;
@@ -495,4 +500,44 @@ section#section3>h3 {
     border: none;
     @include flex(nowrap, center);
     margin: 0 auto;
+    position: absolute;
+    bottom: 30px;
+    left: 90px;
+}
+#eventwrap{
+    width: 1920px;
+    height: 100%;
+    background-color: $color-b;
+    position: fixed;
+    top: 0;
+    z-index: 200;
+    ul{
+        position: absolute;
+        background-color: $color-w;
+        width: 300%;
+        overflow: hidden;
+        height: 600px;
+        top: 20%;
+        li#slide1{
+            position: relative;
+            width: 33.3333%;
+            overflow: hidden;
+            height: 100%;
+            ul{
+                width: 100%;
+                display: block;
+                li{
+                    height: 100px;
+                    figure{
+                        display: flex;
+                        flex-wrap: nowrap;
+                        img{
+                            width: 100px;
+                            height: 100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
