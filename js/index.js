@@ -136,7 +136,10 @@ function gallery03(){
 
 function event(){
   let eventwidth = $('#eventwrap>ul>li').width();
-  $('#slide1').on('click',function(){
+  $('#slide1>ul>li').on('click',function(){
+    $('#eventwrap>ul').animate({marginLeft: '-='+eventwidth+'px'});
+  })
+  $('#slide2>button').on('click',function(){
     $('#eventwrap>ul').animate({marginLeft: '-='+eventwidth+'px'});
   })
 }
